@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  simple-app:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - .:/app
