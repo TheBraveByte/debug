@@ -16,7 +16,7 @@ COPY . .
 
 # build your code from the main folder/file in the parent folder
 # and disabled using C code and use just pure default golang
-RUN CGO_ENABLED=0 go build -o debugApp ./cmd/web
+RUN CGO_ENABLED=0 go build -o debugApp .
 
 RUN chmod +x /app/debugApp
 
